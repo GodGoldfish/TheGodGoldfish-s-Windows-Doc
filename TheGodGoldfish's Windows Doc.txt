@@ -11,7 +11,7 @@ OPEN SOURCE
 NO LICENSE
 PLEASE JUST REFER ME IF YOU ARE USING MY DOCUMENT FOR SHARING IT
 I HOPE YOU WILL LIKE IT
-DROP A STAR ON THE GITHUB PAGE "link"
+DROP A STAR ON THE GITHUB PAGE "https://github.com/GodGoldfish/TheGodGoldfish-s-Windows-Doc"
 
 In this process you will disable and enter some value, the windows update and some related services are gonna disabled and also some other things on the computer too. 
 i'm not responsible of any dammage caused by this document 
