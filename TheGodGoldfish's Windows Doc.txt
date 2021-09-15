@@ -1,0 +1,191 @@
+
+This document has been created by TheGodGoldfish to optimize the performance and the stability of Windows 10/11 and your privacy.
+
+---
+
+*
+
+LEGAL BORING PART
+OPEN SOURCE
+0.5 VERSION OF DOCUMENT
+NO LICENSE
+PLEASE JUST REFER ME IF YOU ARE USING MY DOCUMENT FOR SHARING IT
+I HOPE YOU WILL LIKE IT
+DROP A STAR ON THE GITHUB PAGE "link"
+
+In this process you will disable and enter some value, the windows update and some related services are gonna disabled and also some other things on the computer too. 
+i'm not responsible of any dammage caused by this document 
+I can only say that i did that on my computers and i didn't have any problems by following my Manual.
+As always the computers are always different so be careful and make some backups.
+
+*
+
+----
+
+!!! DO NOT ACTIVATE YOUR CONNECTION IN THIS PROCESS EXCEPT WHEN I WILL ASK FOR IT !!!
+
+STEP 1 :
+INSTALL WINDOWS 10 I REPEAT WITHOUT ANY CONNECTION !!!!
+(Important for windows update to not install shitty things)
+OBSIOUVLY DURING THE INSTALLATION STEPS REMOVE ALL THE NON-PRIVACY SETTINGS EXCEPT IF YOU ARE STUPID
+
+----
+
+STEP 2 :
+(Once Win10 is installed)
+GO IN THE EXPLORER
+REMOVE THE INDEX & THE DEFRAGMENTER PLANNING
+ACTIVATE THE COMPRESSION OF THE DISKS
+REMOVE WINDOWS PEEK & USELESS SETTINGS IN THE SYSTEM MANAGER - > PERFORMANCE
+SET UP "START UP & BACKUP" SETTINGS
+Settings -> research -> search in windows remove it by selecting the devices in whitelisted folders
+
+----
+
+STEP 3 (NOT NECESSARY)
+INSTALL THE IMPORTANT WINDOWS UPDATES FROM THE MICROSOFT CATALOGUE
+https://www.catalog.update.microsoft.com/Home.aspx
+(videos about how to do it are available on YouTube)
+GO IN THE SETTINGS -> Devices -> Typing -> avanced keyboard settings -> language bar options -> language bar hide -> key settings -> edit -> not assigned
+YOU WILL HAVE TO RESTART YOUR COMPUTER
+regedit -> HKEY_CURRENT_USER\System\GameConfigStore -> all the "GAMEDVR" settings have to be on 0 
+
+----
+
+(Once restarted)
+STEP 4 :
+DOWNLOAD & START
+WPD Windows
+(https://wpd.app/)
+DISABLE EVERYTHING INSIDE AND KEEP ANYTHING THAT YOU WANT (like microphone & camera) also some services are recommanded to not be disabled so be careful
+ALSO DISABLE EVERYTHING IN THE TAB JUST BELOW THE FIRST ONE
+YOU CAN ALSO UNINSTALL ALL THE USELESS PROGRAMS BELOW THIS TAB
+
+----
+
+STEP 5 :
+REMOVE HYBRID SLEEP MODE IN CMD WITH ADMIN PRIVILIEGES
+
+powercfg.exe /hibernate off
+
+Additional (Working on every version from 21H1 to the first version) :
+
+Pro : 
+	W269N-WFGWX-YVC9B-4J6C9-T83GX 
+
+Home :
+	YTMG3-N6DKC-DKB77-7M9GH-8HVX7
+	TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
+
+slmgr /ipk "windows keygen"
+slmgr /skms s8.now.im
+slmgr /ato
+
+----
+
+STEP 6 :
+THE CONNECTION NOW CAN BE ACTIVATED
+
+INSTALL ALL OF YOUR DRIVERS FROM THE WEB PAGE OF YOUR HARDWARE
+(the most of time on the motherboard support web page).
+
++ (optional)
+
+INSTALL ALL THE "Microsoft Visual C++" (useful programs for gaming experience) :
+https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/
+
+----
+
+STEP 7 :
+(Open POWERSHELL with admin permissions)
+(To reduce CPU & RAM Comsumption, yes windows use this functionnality for no reason)
+
+Verify if "memory compression" is on true 
+Get-MMAgent
+
+Disable the "memory compression"
+Disable-MMAgent -m
+
+----
+
+STEP 8 :
+DESACTIVATE USELESS PERIPHERICALS 
+PERIPHERICALS MANAGER -> system periphericals
+
+----
+
+STEP 9 :
+(Open REGEDIT)
+WINDOWS PERFORMANCE CONSUMPTION (how windows use the capacity of your computer)
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile
+SystemResponsiveness -> 10
+(if you are using multiple programs at the same time and not just one game i recommand you to put "10")
+
+---
+
+STEP 10 :
+(Open REGEDIT)
+(https://en.wikipedia.org/wiki/Prefetching)
+PREFETCH :
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters
+EnablePrefetcher -> 0
+create DWORD 32 bits in the same directory -> EnableSuperfetch -> 0 
+
+----
+
+STEP 11 :
+(Open REGEDIT)
+(set the RAM capacity to reduce the "svchost.exe" in the background
+HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control
+SvcHostSplitThresholdInKB -> ? x 1024 x 1024
+(THE CURRENT RAM IN GB THAT YOU ARE USING FOR EXEMPLE 32GB x 1024 x 1024 AND THEN WRITE AND ENTER THE "33554432" value)
+
+----
+
+STEP 12 :
+(something useless but disabling HPET "High Precision Event Timer" removes the micro-stuttering and screen tearing that may occur during gameplay and render process)
+(In CMD with admin permissions)
+
+bcdedit /deletevalue useplatformclock
+&
+bcdedit /set disabledynamictick yes
+
+----
+
+STEP 13 :
+DISABLE USELESS SERVICES THAT YOU ARE NOT USING / services.msc /
+(FREE SOME RAM AND CPU UTILIZATION)
+(In CMD with admin permissions)
+
+SuperPrefetch :
+sc config "SysMain" start= disabled
+
+SCANNER :
+sc config "stisvc" start= disabled
+
+FAX :
+sc config "Fax" start= disabled
+
+NON-TABLET WINDOWS :
+sc config "TabletInputService" start= disabled
+
+----
+
+STEP 15 :
+Nvidia :
+settings -> display -> graphic settings -> activate
+
+(optional but recommanded)
+right click on the desk -> nvidia panel -> set up everything that you need
+
+(optional)
+AMD :
+adrenaline -> performance -> settings -> overcloking
+
+----
+
+IT'S THE END OF THIS DOCUMENT
+ENJOY YOUR OPTIMIZED COMPUTER BY THEGODGOLDFISH THE GOD OF THE GOLDFISHES !!
+
+Created by TheGodGoldfish 2021
+Last Update "10/07/2021"
