@@ -7,7 +7,7 @@ This document has been created by TheGodGoldfish to optimize the performance and
 
 LEGAL BORING PART
 OPEN SOURCE
-0.5 VERSION OF DOCUMENT
+0.6 VERSION OF DOCUMENT
 NO LICENSE
 PLEASE JUST REFER ME IF YOU ARE USING MY DOCUMENT FOR SHARING IT
 I HOPE YOU WILL LIKE IT
@@ -119,7 +119,7 @@ STEP 9 :
 WINDOWS PERFORMANCE CONSUMPTION (how windows use the capacity of your computer)
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile
 SystemResponsiveness -> 10
-(if you are using multiple programs at the same time and not just one game i recommand you to put "10")
+(if you are using multiple programs at the same time and not just one game i recommand you to put "10" or "5")
 
 ---
 
@@ -188,4 +188,4 @@ IT'S THE END OF THIS DOCUMENT
 ENJOY YOUR OPTIMIZED COMPUTER BY THEGODGOLDFISH THE GOD OF THE GOLDFISHES !!
 
 Created by TheGodGoldfish 2021
-Last Update "10/07/2021"
+Last Update "15/09/2021"
