@@ -7,7 +7,7 @@ This document has been created by TheGodGoldfish to optimize the performance and
 
 LEGAL BORING PART
 OPEN SOURCE
-0.6 VERSION OF DOCUMENT
+0.6.1 VERSION OF DOCUMENT
 NO LICENSE
 PLEASE JUST REFER ME IF YOU ARE USING MY DOCUMENT FOR SHARING IT
 I HOPE YOU WILL LIKE IT
@@ -78,7 +78,7 @@ Home :
 	TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
 
 slmgr /ipk "windows keygen"
-slmgr /skms s8.now.im
+slmgr /skms s8.uk.to
 slmgr /ato
 
 ----
